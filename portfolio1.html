@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amit Kumar Singh - Portfolio</title>
+
+    <!-- Modern and Responsive CSS -->
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        .header {
+            background-color: #1f2937;
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+        }
+
+        /* Sticky Navigation */
+        nav {
+            background-color: #111827;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 1rem 1.5rem;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #10b981;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #16a34a, #059669);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 1rem;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-btn {
+            background-color: #16a34a;
+        }
+
+        .btn:hover {
+            background-color: #3b82f6;
+            transform: scale(1.05);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 4rem 1rem;
+            text-align: center;
+            background-color: #f3f4f6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        #about p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+
+        /* Skills Section */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skills-list li {
+            background-color: #e5e7eb;
+            padding: 12px 18px;
+            margin: 5px;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        /* Project Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .project {
+            background-color: #fff;
+            border: 1px solid #e5e7eb;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            transform: translateY(-8px);
+            background-color: #f3f4f6;
+        }
+
+        .project h3 {
+            color: #1f2937;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        #contact a {
+            color: #2563eb;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .btn {
+                padding: 10px 20px;
+            }
+
+            nav a {
+                padding: 0.8rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Amit Kumar Singh</h1>
+        <p>Data Science Enthusiast | Machine Learning | Python | Java</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Hi, I'm Amit!</h2>
+        <p>
+            Passionate about data science, machine learning, and building impactful solutions.
+        </p>
+        <a href="#contact" class="btn">Get in Touch</a>
+        <a href="Amit_Kumar_Singh_Resume.pdf" download="Amit_Kumar_Singh_Resume.pdf" class="btn resume-btn">
+            📄 Download Resume
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm a 2nd-year Data Science student passionate about solving real-world
+                problems using machine learning and deep learning. I've built models for
+                breast cancer classification, face detection, and fraud detection.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>✅ Python</li>
+                <li>✅ Machine Learning</li>
+                <li>✅ Deep Learning</li>
+                <li>✅ Java</li>
+                <li>✅ HTML & CSS</li>
+                <li>✅ OpenCV & TensorFlow</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>✅ Breast Cancer Classification Model</h3>
+                    <p>
+                        - Developed and trained a machine learning model to classify breast
+                        cancer using Scikit-learn. Achieved an accuracy of
+                        <strong>95%</strong>.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>✅ Face Detection System</h3>
+                    <p>
+                        - Implemented a real-time face detection system using Python and
+                        OpenCV. Optimized the model for faster detection in dynamic environments.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>✅ Credit Card Fraud Detection</h3>
+                    <p>
+                        - Developed a fraud detection model using Logistic Regression and Random Forest.<br />
+                        - Analyzed transaction data to identify patterns and reduce false positives.<br />
+                        - Achieved an accuracy of <strong>98%</strong>.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>✅ House Price Prediction</h3>
+                    <p>
+                        - Built a regression model to predict house prices using Linear Regression and XGBoost.<br />
+                        - Improved prediction accuracy through feature scaling and hyperparameter tuning.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>✅ Sentiment Analysis of Movie Reviews</h3>
+                    <p>
+                        - Analyzed movie reviews to classify sentiments (positive/negative) using Natural Language Processing (NLP).<br />
+                        - Achieved a sentiment classification accuracy of <strong>90%</strong>.
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h3>✅ Portfolio Website</h3>
+                    <p>
+                        - Designed and developed a fully responsive personal portfolio using HTML, CSS, and JavaScript.<br />
+                        - Showcased projects and resume to enhance online presence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>
+                Interested in collaborating or learning more about my work? Feel free to
+                reach out!
+            </p>
+            <p>Email: <a href="mailto:amit.singh@example.com">amit.singh@example.com</a></p>
+            <p>Phone: +91-9876543210</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Amit Kumar Singh | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
